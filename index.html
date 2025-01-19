@@ -10,11 +10,22 @@
 </head>
 
 <body>
+    <div class="game-model">
+        <div class="content">
+            <img src="images/lost.gif" alt="lost gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>Rainbow</b></p>
+            <button class="play-again">Play Again!</button>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="hangman-img">
-            <img src="images/hangman-0.svg" alt="The start base of hnagman game">
-            <div class="letterBox">
-                <ul class="letterList">
+        <div class="hangman-box">
+            <h1>Hangman Game</h1>
+            <img src="images/hangman-0.svg" alt="The start base of hangman game">
+        </div>
+            <div class="game-box">
+                <ul class="word-display">
                     <li class="letter"></li>
                     <li class="letter"></li>
                     <li class="letter"></li>
@@ -23,18 +34,17 @@
                     <li class="letter"></li>
                     <li class="letter"></li>
                 </ul>
-            </div>
-            <h4 class="hints">Hint:
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam doloremque molestiae! Soluta dolores at reprehenderit nisi doloremque? Illum porro repellat molestias repudiandae provident sapiente praesentium ducimus tempora nam unde.</p>
-            </h4>
+                <h4 class="hint-text">Hint:
+                    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+                </h4>
+    
+                <h4 class="guesses-text">incorrect guesses:
+                    <b>0 / 6</b>
+                </h4>
+           
 
-            <h4 class="guesses">incorrect guesses:
-                <p>0 / 6</p>
-            </h4>
 
-
-
-            <div>
+            <div class="keyboard">
                 <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button>
                 <button>H</button><button>I</button><button>J</button><button>k</button><button>L</button><button>M</button><button>N</button>
                 <button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button>
