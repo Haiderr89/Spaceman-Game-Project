@@ -4,12 +4,14 @@ body {
     justify-content: center;
     background-color: gainsboro;
     height: 100vh;
-    background-image: url("images/chalkboard-1337809_640.jpg");
-    
+    background-image: url("images/premium_photo-1675765793965-b5b4d394b51f.jpeg");
+    background-image: url("images/ -9.jpg");
+    background-image: url("images/among.jpg");
+    background-size: cover;
     /* background: linear-gradient(70deg, yellow, grey); */
     /* color: white;
     text-shadow: 0 0 20px black, 0 0 30px purple; */
-
+    color: white; 
 }
 
 h1 {
@@ -17,23 +19,27 @@ h1 {
 }
 
 .container {
-    width: 850px;
-    background-color: white;
+    /* width: 1000px; */
+    /* background-color: white; */
     display: flex;
     gap: 70px;
     align-items: flex-end;
     padding: 60px 40px;
     border-radius: 10px;
+    height: 500px;
+    /* background-image: url("images/high-angle-view-of-blank-blue-lined-paper-with-textured-wrinkled-background-photo.jpg"); */
 }
 
 .hangman-box img{
     max-width: 270px;
+    margin-bottom: 47%;
 }
 
 .hangman-box h1 {
     font-size: 1.45rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
+    color: white;
 }
 
 .word-display {
@@ -51,7 +57,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 40px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
 }
 
 .game-box h4 {
@@ -74,22 +80,24 @@ h1 {
     gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 19%;
 }
 
 .keyboard button {
     font-size: 1rem;
     font-weight: 600;
-    width: calc(100% / 9 - 5px);/* rewrite this or understand it */
+    width: 10%;
     cursor: pointer;
     outline: none;
     /* background-color: blueviolet; */
     text-transform: capitalize;
-    color: aliceblue;
+    color: black;
     border-radius: 15px;
+    background-color: white;
 }
 
 .keyboard button:hover{
-    background: darkblue;
+    background: grey;
 }
 
 button:disabled {
@@ -97,6 +105,7 @@ button:disabled {
     color: white; /* Change text color */
     cursor: not-allowed; /* Change the cursor to indicate it can't be clicked */
 }
+
 
 /* ------------------------------------------------------------------------------------ */
 
@@ -150,5 +159,21 @@ button:disabled {
 }
 
 
-/* ------------------------------------------------------------------------------------ */
 
+/* ------------------------------------------------------------------------------------ */
+.con {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.play-again {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100px;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    color: black;
+    border-radius: 15px;
+    background-color: white;
+}
