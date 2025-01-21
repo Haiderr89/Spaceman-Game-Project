@@ -68,10 +68,10 @@ playAgainButton.addEventListener("click", initGame);
 
 /*-------------------------------- Function 1--------------------------------*/
 function initGame() {
-    
+
     //this is to random the words in the secretWords array 
     const randomIndex = Math.floor(Math.random() * secretWords.length);
-    
+
     // stores the words in secretword using the random const with the hint
     secretWord = secretWords[randomIndex].word.toUpperCase();
     hint = secretWords[randomIndex].hint;
@@ -99,7 +99,7 @@ function renderWordDisplay() {
 
         // Then it checks the guesses letter is in the word, if its here add it in the the listItem, else if not keep it empty.
         if (guessedLetters.includes(letter)) {
-            listItem.textContent = letter; 
+            listItem.textContent = letter;
         } else {
             listItem.textContent = "";
         }
@@ -115,14 +115,16 @@ function renderGuessesText() {
     guessesTextElement.innerHTML = `${incorrectGuesses} / ${max_incorrect_guesses}`;
 }
 
-
 /*-------------------------------- Function 4--------------------------------*/
 function handleGuess(letter) {
     //to not be able to click a button you have already clicked 
-    if (guessedLetters.includes(letter)) 
-        return;
+    // if (guessedLetters.includes(letter))
+    //     return;
 
     guessedLetters.push(letter);
+
+    // Disable the clicked button
+    disableButtonOnClick(letter);
 
     //if the letter pressed wrong increment the incorrect guesses
     if (!secretWord.includes(letter)) {
@@ -166,6 +168,14 @@ function disableKeyboard() {
     keyboardElement.querySelectorAll("button").forEach(button => {
         button.disabled = true;
     });
+}
+
+/*-------------------------------- Function 9--------------------------------*/
+function disableButtonOnClick(letter) {
+    const button = document.getElementById(letter);
+    if (button) {
+        button.disabled = true;
+    }
 }
 
 initGame();
