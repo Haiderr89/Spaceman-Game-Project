@@ -12,18 +12,25 @@ The ***Spaceman Game (among us edition)*** is a fun twist on the classic Hangman
 
 ## Getting started: 
 
+#### Trello planning link: https://trello.com/b/spafCcti
 #### Link to my game: https://haiderr89.github.io/Spaceman-Game-Project/
 
 ***How to play:***
 * **Goal:** Guess the word before the Among Us character explodes.
-* **Tries:6** wrong guesses = explosion.
+* **Tries:** 6 wrong guesses = explosion.
 * **Hint:** Each word comes with a hint.
 * **Gameplay:** Guess letters; correct ones fill blanks, wrong ones lose tries.
 * **Winning:** Save the character by guessing the word or lose if it explodes.
             
+## Technologies used: 
+#### List of the technologies used are: 
+* JavaScript
+* HTML
+* CSS
 
-
-
-Attributions: This section should include links to any external resources (such as libraries or assets) you used to develop your application that require attribution. You can exclude this section if it does not apply to your application.
-Technologies used: List of the technologies used, for example: JavaScript, HTML, CSS, etc.
-Next steps: Planned future enhancements (stretch goals).
+## Next steps: 
+* Custom Words
+* Sound Effects
+* Mobile Application
+* Difficulty Levels
+* Leaderboards
