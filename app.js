@@ -3,221 +3,142 @@ const max_incorrect_guesses = 6;
 const secretWords = [
     {
         word: "guitar",
-        hint: "A musical instrument with strings."
+        hint: "A string instrument you play with your hands."
     },
     {
         word: "oxygen",
-        hint: "A colorless, odorless gas essential for life."
+        hint: "The air we need to breathe."
     },
     {
         word: "mountain",
-        hint: "A large natural elevation of the Earth's surface."
+        hint: "A very big hill."
     },
     {
         word: "painting",
-        hint: "An art form using colors on a surface to create images or expression."
-    },
-    {
-        word: "astronomy",
-        hint: "The scientific study of celestial objects and phenomena."
+        hint: "A picture made with colors."
     },
     {
         word: "football",
-        hint: "A popular sport played with a spherical ball."
+        hint: "A game played with a ball on a field."
     },
     {
         word: "chocolate",
-        hint: "A sweet treat made from cocoa beans."
+        hint: "A sweet treat made from cocoa."
     },
     {
         word: "butterfly",
-        hint: "An insect with colorful wings and a slender body."
+        hint: "A colorful insect with wings."
     },
     {
         word: "history",
-        hint: "The study of past events and human civilization."
+        hint: "Stories about the past."
     },
     {
         word: "pizza",
-        hint: "A savory dish consisting of a round, flattened base with toppings."
+        hint: "A flat bread with toppings like cheese."
     },
     {
         word: "camera",
-        hint: "A device used to capture and record images or videos."
+        hint: "A device to take pictures."
     },
     {
         word: "diamond",
-        hint: "A precious gemstone known for its brilliance and hardness."
-    },
-    {
-        word: "adventure",
-        hint: "An exciting or daring experience."
-    },
-    {
-        word: "science",
-        hint: "The systematic study of the structure and behavior of the physical and natural world."
+        hint: "A shiny and expensive stone."
     },
     {
         word: "bicycle",
-        hint: "A human-powered vehicle with two wheels."
+        hint: "A vehicle with two wheels you pedal."
     },
     {
         word: "sunset",
-        hint: "The daily disappearance of the sun below the horizon."
+        hint: "When the sun goes down."
     },
     {
         word: "coffee",
-        hint: "A popular caffeinated beverage made from roasted coffee beans."
+        hint: "A drink that wakes you up."
     },
     {
         word: "dance",
-        hint: "A rhythmic movement of the body often performed to music."
+        hint: "Moving your body to music."
     },
     {
         word: "galaxy",
-        hint: "A vast system of stars, gas, and dust held together by gravity."
-    },
-    {
-        word: "orchestra",
-        hint: "A large ensemble of musicians playing various instruments."
-    },
-    {
-        word: "volcano",
-        hint: "A mountain or hill with a vent through which lava, rock fragments, hot vapor, and gas are ejected."
-    },
-    {
-        word: "novel",
-        hint: "A long work of fiction, typically with a complex plot and characters."
-    },
-    {
-        word: "symphony",
-        hint: "A long musical composition for a full orchestra, typically in multiple movements."
-    },
-    {
-        word: "architecture",
-        hint: "The art and science of designing and constructing buildings."
-    },
-    {
-        word: "ballet",
-        hint: "A classical dance form characterized by precise and graceful movements."
-    },
-    {
-        word: "astronaut",
-        hint: "A person trained to travel and work in space."
+        hint: "A group of stars in space."
     },
     {
         word: "waterfall",
-        hint: "A cascade of water falling from a height."
-    },
-    {
-        word: "technology",
-        hint: "The application of scientific knowledge for practical purposes."
+        hint: "Water falling from a high place."
     },
     {
         word: "rainbow",
-        hint: "A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light."
-    },
-    {
-        word: "universe",
-        hint: "All existing matter, space, and time as a whole."
+        hint: "A colorful arc in the sky after rain."
     },
     {
         word: "piano",
-        hint: "A musical instrument played by pressing keys that cause hammers to strike strings."
+        hint: "A musical instrument with keys."
     },
     {
         word: "vacation",
-        hint: "A period of time devoted to pleasure, rest, or relaxation."
+        hint: "A time to relax or travel."
     },
     {
         word: "rainforest",
-        hint: "A dense forest characterized by high rainfall and biodiversity."
+        hint: "A forest with lots of rain and trees."
     },
     {
         word: "theater",
-        hint: "A building or outdoor area in which plays, movies, or other performances are staged."
+        hint: "A place where you watch plays or movies."
     },
     {
         word: "telephone",
-        hint: "A device used to transmit sound over long distances."
-    },
-    {
-        word: "language",
-        hint: "A system of communication consisting of words, gestures, and syntax."
+        hint: "A device used to talk to someone far away."
     },
     {
         word: "desert",
-        hint: "A barren or arid land with little or no precipitation."
+        hint: "A very dry and sandy place."
     },
     {
         word: "sunflower",
-        hint: "A tall plant with a large yellow flower head."
+        hint: "A tall yellow flower."
     },
     {
         word: "fantasy",
-        hint: "A genre of imaginative fiction involving magic and supernatural elements."
+        hint: "A made-up story with magic."
     },
     {
         word: "telescope",
-        hint: "An optical instrument used to view distant objects in space."
-    },
-    {
-        word: "photography",
-        hint: "The art, process, or practice of creating images by recording light or other electromagnetic radiation."
+        hint: "A tool to see faraway stars."
     },
     {
         word: "safari",
-        hint: "An expedition or journey, typically to observe wildlife in their natural habitat."
+        hint: "A trip to see wild animals."
     },
     {
         word: "planet",
-        hint: "A celestial body that orbits a star and does not produce light of its own."
+        hint: "A round object in space like Earth."
     },
     {
         word: "river",
-        hint: "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream."
-    },
-    {
-        word: "tropical",
-        hint: "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn."
-    },
-    {
-        word: "mysterious",
-        hint: "Difficult or impossible to understand, explain, or identify."
-    },
-    {
-        word: "enigma",
-        hint: "Something that is mysterious, puzzling, or difficult to understand."
-    },
-    {
-        word: "puzzle",
-        hint: "A game, toy, or problem designed to test ingenuity or knowledge."
-    },
-    {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
+        hint: "A large stream of water."
     },
     {
         word: "shadow",
-        hint: "A dark area or shape produced by an object blocking the light."
+        hint: "A dark shape made by blocking light."
     },
     {
         word: "secret",
-        hint: "Something kept hidden or unknown to others."
+        hint: "Something hidden from others."
     },
     {
         word: "curiosity",
-        hint: "A strong desire to know or learn something."
-    },
-    {
-        word: "unpredictable",
-        hint: "Not able to be foreseen or known beforehand; uncertain."
+        hint: "Wanting to learn or know more."
     },
     {
         word: "brilliant",
-        hint: "Exceptionally clever, talented, or impressive."
-    },
+        hint: "Very smart or bright."
+    }
 ];
+
 
 const images = ["./images/0.png", "./images/1.png", "./images/2.png", "./images/3.png", "./images/4.png", "./images/5.png", "./images/6.png"];
 
