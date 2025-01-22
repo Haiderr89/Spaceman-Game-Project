@@ -4,7 +4,7 @@ body {
     justify-content: center;
     background-color: gainsboro;
     height: 98vh;
-    background-image: url("images/among.jpg");
+    background-image: url("./images/among.jpg");
     background-size: cover;
     color: white;
 }

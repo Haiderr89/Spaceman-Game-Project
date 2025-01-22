@@ -1,5 +1,5 @@
 body {
-    background-image: url(".images/\ -9.jpg");
+    background-image: url("./images/\ -9.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .content {
-    background-image: url("/images/paper.jpg");
+    background-image: url("./images/paper.jpg");
     border-radius: 5%;
     width: 80%;
     display: flex;
