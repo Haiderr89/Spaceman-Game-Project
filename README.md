@@ -12,7 +12,7 @@ The ***Spaceman Game (among us edition)*** is a fun twist on the classic Hangman
 
 ## Getting started: 
 
-#### link to your deployed game
+#### Link to my game: https://haiderr89.github.io/Spaceman-Game-Project/
 
 ***How to play:***
 * **Goal:** Guess the word before the Among Us character explodes.
