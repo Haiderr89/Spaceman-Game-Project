@@ -43,11 +43,14 @@ const secretWords = [
     }
 ];
 
+const images = ["images/1.png", "images/2.png", "images/3.png", "images/4.png", "images/5.png", "images/6.png"]; 
+
 /*-------------------------------- Variables --------------------------------*/
 let secretWord = "";
 let hint = "";
 let incorrectGuesses = 0;
 let guessedLetters = [];
+let imageIndx = 0;
 
 /*------------------------ Cached Element References ------------------------*/
 const wordDisplayElement = document.querySelector(".word-display");
@@ -56,6 +59,7 @@ const keyboardElement = document.querySelector(".keyboard");
 const playAgainButton = document.querySelector(".play-again");
 const hintElement = document.querySelector(".hint-text b");
 const messageElement = document.querySelector(".gameMessage p");
+const imageElement = document.querySelector(".hangman-box img");
 
 /*----------------------------- Event Listeners -----------------------------*/
 keyboardElement.querySelectorAll("button").forEach(button => {
@@ -129,6 +133,7 @@ function handleGuess(letter) {
     //if the letter pressed wrong increment the incorrect guesses
     if (!secretWord.includes(letter)) {
         incorrectGuesses++;
+        changeImage();
     }
 
     //call the functions to add the letter if correct or increment the wrong if wrong
@@ -177,5 +182,12 @@ function disableButtonOnClick(letter) {
         button.disabled = true;
     }
 }
+
+/*-------------------------------- Function 10--------------------------------*/
+function changeImage(){
+    imageElement.src = images[imageIndx];
+    imageIndx++;
+}
+
 
 initGame();

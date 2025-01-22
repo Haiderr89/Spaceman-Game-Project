@@ -3,14 +3,9 @@ body {
     align-items: center;
     justify-content: center;
     background-color: gainsboro;
-    height: 100vh;
-    background-image: url("images/premium_photo-1675765793965-b5b4d394b51f.jpeg");
-    background-image: url("images/ -9.jpg");
+    height: 98vh;
     background-image: url("images/among.jpg");
     background-size: cover;
-    /* background: linear-gradient(70deg, yellow, grey); */
-    /* color: white;
-    text-shadow: 0 0 20px black, 0 0 30px purple; */
     color: white; 
 }
 
@@ -19,25 +14,21 @@ h1 {
 }
 
 .container {
-    /* width: 1000px; */
-    /* background-color: white; */
     display: flex;
     gap: 70px;
     align-items: flex-end;
     padding: 60px 40px;
     border-radius: 10px;
     height: 500px;
-    /* background-image: url("images/high-angle-view-of-blank-blue-lined-paper-with-textured-wrinkled-background-photo.jpg"); */
 }
 
 .hangman-box img{
-    max-width: 400px;
-    margin-bottom: 47%;
+    max-width: 500px;
+    margin-bottom: 17%;
 }
 
 .hangman-box h1 {
     font-size: 2.5rem;
-    /* margin-top: 20px; */
     text-align: center;
     color: white;
 }
@@ -92,7 +83,6 @@ h1 {
     width: 10%;
     cursor: pointer;
     outline: none;
-    /* background-color: blueviolet; */
     text-transform: capitalize;
     color: black;
     border-radius: 15px;
@@ -104,12 +94,14 @@ h1 {
 }
 
 button:disabled {
-    background-color: gray; /* Change background color to indicate disabled state */
-    color: white; /* Change text color */
-    cursor: not-allowed; /* Change the cursor to indicate it can't be clicked */
+    background-color: gray;
+    color: white; 
+    cursor: not-allowed;
 }
 
-
+.game-box{
+    margin-bottom: 30px;
+}
 /* ------------------------------------------------------------------------------------ */
 
 .game-model{
@@ -189,3 +181,8 @@ button:disabled {
     border-radius: 20px;
     text-align: center;
 }
+
+.con .play-again{
+    margin-top: 50px;
+}
+
