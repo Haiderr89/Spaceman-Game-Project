@@ -219,7 +219,7 @@ const secretWords = [
     },
 ];
 
-const images = ["images/1.png", "images/2.png", "images/3.png", "images/4.png", "images/5.png", "images/6.png"]; 
+const images = ["images/0.png", "images/1.png", "images/2.png", "images/3.png", "images/4.png", "images/5.png", "images/6.png"]; 
 
 /*-------------------------------- Variables --------------------------------*/
 let secretWord = "";
@@ -259,10 +259,12 @@ function initGame() {
     secretWord = secretWords[randomIndex].word.toUpperCase();
     hint = secretWords[randomIndex].hint;
 
-    //initial state
+    //initial state resets
     incorrectGuesses = 0;
     guessedLetters = [];
     messageElement.textContent = "";
+    imageIndx = 0; 
+    imageElement.src = images[imageIndx];
 
     renderWordDisplay();
     renderGuessesText();
@@ -363,11 +365,11 @@ function disableButtonOnClick(letter) {
 }
 
 /*-------------------------------- Function 10--------------------------------*/
-function changeImage(){
-    imageElement.src = images[imageIndx];
+
+function changeImage() {
     imageIndx++;
+    imageElement.src = images[imageIndx]; 
+  
 }
-
-
 
 initGame();
