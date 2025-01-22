@@ -1,0 +1,58 @@
+body{
+    background-image: url("images/\ -9.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    background-size: repeat;
+    color: black; 
+}
+
+.content{
+    background-image: url("/images/paper.jpg");
+    border-radius: 5%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.content img{
+    align-items: center;
+    margin-left: 50px;
+}
+
+.text h1{
+font-size: 60px;
+margin-left: 18%;
+align-content: center;
+justify-content: center;
+}
+
+.text h3{
+    margin-left: 30%;
+    }
+
+.text{
+    margin-left: 107px;
+}
+
+.start{
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px 20px;
+    font-size: small;
+}
+
+.start:hover{
+    background: grey;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
