@@ -219,7 +219,7 @@ const secretWords = [
     },
 ];
 
-const images = ["images/0.png", "images/1.png", "images/2.png", "images/3.png", "images/4.png", "images/5.png", "images/6.png"]; 
+const images = ["images/0.png", "images/1.png", "images/2.png", "images/3.png", "images/4.png", "images/5.png", "images/6.png"];
 
 /*-------------------------------- Variables --------------------------------*/
 let secretWord = "";
@@ -263,7 +263,7 @@ function initGame() {
     incorrectGuesses = 0;
     guessedLetters = [];
     messageElement.textContent = "";
-    imageIndx = 0; 
+    imageIndx = 0;
     imageElement.src = images[imageIndx];
 
     renderWordDisplay();
@@ -295,9 +295,9 @@ function renderWordDisplay() {
 
 
 /*-------------------------------- Function 3--------------------------------*/
-//this function adds in the HTML using innerHTML the number of incorrect guesses and max which is 6
-function renderGuessesText() {
-    guessesTextElement.innerHTML = `${incorrectGuesses} / ${max_incorrect_guesses}`;
+//now it splits the secretword and then checks if the letters pressed are available in the splited word
+function isWordGuessed() {
+    return secretWord.split("").every(letter => guessedLetters.includes(letter));
 }
 
 /*-------------------------------- Function 4--------------------------------*/
@@ -330,11 +330,10 @@ function handleGuess(letter) {
 }
 
 /*-------------------------------- Function 5--------------------------------*/
-//now it splits the secretword and then checks if the letters pressed are available in the splited word
-function isWordGuessed() {
-    return secretWord.split("").every(letter => guessedLetters.includes(letter));
+//this function adds in the HTML using innerHTML the number of incorrect guesses and max which is 6
+function renderGuessesText() {
+    guessesTextElement.innerHTML = `${incorrectGuesses} / ${max_incorrect_guesses}`;
 }
-
 /*-------------------------------- Function 6--------------------------------*/
 // this prints message 
 function showGameMessage(message) {
@@ -368,8 +367,8 @@ function disableButtonOnClick(letter) {
 
 function changeImage() {
     imageIndx++;
-    imageElement.src = images[imageIndx]; 
-  
+    imageElement.src = images[imageIndx];
+
 }
 
 initGame();

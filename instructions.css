@@ -1,14 +1,14 @@
-body{
+body {
     background-image: url("images/\ -9.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
     height: 98vh;
     background-size: repeat;
-    color: black; 
+    color: black;
 }
 
-.content{
+.content {
     background-image: url("/images/paper.jpg");
     border-radius: 5%;
     width: 80%;
@@ -18,27 +18,27 @@ body{
     height: 80%;
 }
 
-.content img{
+.content img {
     align-items: center;
     margin-left: 50px;
 }
 
-.text h1{
-font-size: 60px;
-margin-left: 18%;
-align-content: center;
-justify-content: center;
+.text h1 {
+    font-size: 60px;
+    margin-left: 18%;
+    align-content: center;
+    justify-content: center;
 }
 
-.text h3{
+.text h3 {
     margin-left: 30%;
-    }
+}
 
-.text{
+.text {
     margin-left: 107px;
 }
 
-.start{
+.start {
     font-weight: 600;
     cursor: pointer;
     color: black;
@@ -48,11 +48,11 @@ justify-content: center;
     font-size: small;
 }
 
-.start:hover{
+.start:hover {
     background: grey;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
