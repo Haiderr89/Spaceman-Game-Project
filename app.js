@@ -216,17 +216,15 @@ function renderWordDisplay() {
 
 
 /*-------------------------------- Function 3--------------------------------*/
-//now it splits the secretword and then checks if the letters pressed are available in the splited word
-function isWordGuessed() {
-    return secretWord.split("").every(letter => guessedLetters.includes(letter));
+//this function adds in the HTML using innerHTML the number of incorrect guesses and max which is 6
+function renderGuessesText() {
+    guessesTextElement.innerHTML = `${incorrectGuesses} / ${max_incorrect_guesses}`;
 }
 
 /*-------------------------------- Function 4--------------------------------*/
 function handleGuess(letter) {
-    //to not be able to click a button you have already clicked 
-    // if (guessedLetters.includes(letter))
-    //     return;
 
+    //to not be able to click a button you have already clicked 
     guessedLetters.push(letter);
 
     // Disable the clicked button
@@ -251,10 +249,11 @@ function handleGuess(letter) {
 }
 
 /*-------------------------------- Function 5--------------------------------*/
-//this function adds in the HTML using innerHTML the number of incorrect guesses and max which is 6
-function renderGuessesText() {
-    guessesTextElement.innerHTML = `${incorrectGuesses} / ${max_incorrect_guesses}`;
+//now it splits the secretword and then checks if the letters pressed are available in the splited word
+function isWordGuessed() {
+    return secretWord.split("").every(letter => guessedLetters.includes(letter));
 }
+
 /*-------------------------------- Function 6--------------------------------*/
 // this prints message 
 function showGameMessage(message) {
@@ -285,7 +284,6 @@ function disableButtonOnClick(letter) {
 }
 
 /*-------------------------------- Function 10--------------------------------*/
-
 function changeImage() {
     imageIndx++;
     imageElement.src = images[imageIndx];
